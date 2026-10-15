@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distros &amp; Guide – RiceLab</title>
+  <meta name="description" content="Compare popular Linux distros and follow a short installation guide.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contrast.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">RiceLab</a>
+    <div class="tools" role="group" aria-label="Accessibility settings">
+      <button type="button" id="font-down" aria-label="Decrease font size">A-</button>
+      <button type="button" id="font-up" aria-label="Increase font size">A+</button>
+      <button type="button" id="contrast-toggle" aria-pressed="false">High Contrast</button>
+    </div>
+  </div>
+</header>
+<nav class="nav" aria-label="Main navigation">
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="distros.html" aria-current="page">Distros &amp; Guide</a></li>
+      <li><a href="share.html">Share Your Setup</a></li>
+  </ul>
+</nav>
+<main id="main" class="page">
+  <p class="breadcrumb">You are here: <a href="index.html">RiceLab</a> &rsaquo; Distros &amp; Guide</p>
+  <h1>Distros &amp; Guide</h1>
+  <p>A short comparison of popular distros for customizing your desktop. If you are new to Linux, start with an <strong>easier</strong> distro; if you want <strong>full control</strong> over every part of the system, try a more advanced one.</p>
+  <section aria-labelledby="table-title">
+    <h2 id="table-title">Distro comparison</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>
+          <details open>
+            <summary>Table 1: Distro comparison</summary>
+            <p>The table compares three popular distros by difficulty, package manager and the type of user they suit best.</p>
+          </details>
+        </caption>
+        <thead>
+          <tr><th scope="col">Distro</th><th scope="col">Difficulty</th><th scope="col">Package manager</th><th scope="col">Good for</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><a href="https://archlinux.org">Arch Linux</a></th><td>Hard</td><td>pacman</td><td>Full control</td></tr>
+          <tr><th scope="row"><a href="https://fedoraproject.org">Fedora</a></th><td>Medium</td><td>dnf</td><td>Fresh software</td></tr>
+          <tr><th scope="row"><a href="https://ubuntu.com">Ubuntu</a></th><td>Easy</td><td>apt</td><td>Beginners</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Which one should you choose?</h3>
+    <ul>
+      <li><strong>Ubuntu</strong> is the easiest start because almost everything works out of the box.</li>
+      <li><strong>Fedora</strong> gives you recent software with a friendly installer.</li>
+      <li><strong>Arch Linux</strong> takes more time to set up, but you build the system exactly the way you like it, which is why many ricers use it.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="guide-title">
+    <h2 id="guide-title">Installation Guide</h2>
+    <div class="guide">
+      <article>
+        <h3>Watch the video</h3>
+        <figure>
+          <video controls preload="metadata" poster="images/video-poster.jpg">
+            <source src="media/install-guide.mp4" type="video/mp4">
+            <p>Your browser cannot play this video. <a href="media/install-guide.mp4">Download the installation guide video</a>.</p>
+          </video>
+          <figcaption>Video: installing and setting up a Linux system step by step. You can also <a href="https://www.youtube.com/watch?v=J6Kta3fb_zM">watch the video on YouTube</a>.</figcaption>
+        </figure>
+        <details>
+          <summary>Full text description of the video</summary>
+          <!-- TODO: update this description so that it matches the final video -->
+          <p>The video starts with a title card: &ldquo;Installation guide&rdquo;. Then the steps follow one after the other, each with a title card and a short explanation.</p>
+          <p>First the narrator shows the official website of the chosen distro and downloads the ISO image. Next, the ISO file is written to a USB drive with a flashing tool. After that, the computer is restarted from the USB drive and the graphical installer is shown: the language, the keyboard layout, the disk and the user name are selected, then the installation runs until it finishes. In the fourth part a window manager is installed and selected on the login screen. In the last part a theme, an icon pack, a font and the configuration files (dotfiles) are applied, and the desktop changes its look. The video ends with the finished desktop.</p>
+        </details>
+      </article>
+      <section aria-labelledby="steps-title">
+        <h3 id="steps-title">Quick Steps</h3>
+        <ol>
+          <li><strong>Download the ISO.</strong> Get the image from the official website of your distro.</li>
+          <li><strong>Make a bootable USB.</strong> Write the ISO to a USB drive.</li>
+          <li><strong>Install the system.</strong> Boot from the USB drive and follow the installer.</li>
+          <li><strong>Pick a window manager.</strong> Choose a desktop environment or a tiling window manager.</li>
+          <li><strong>Add themes and dotfiles.</strong> Install a theme, an icon pack and your configuration files.</li>
+        </ol>
+      </section>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; 2026 RiceLab &ndash; university student project, <span lang="hu">Eötvös Loránd Tudományegyetem</span></p>
+    <p class="footer-links"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>

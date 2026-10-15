@@ -1,0 +1,20 @@
+/* RiceLab – alternative large-font, high-contrast version (switched on with the "High Contrast" button) */
+html.hc { font-size: 125%; }
+html.hc body { background: #000000; color: #ffffff; }
+html.hc h1, html.hc h2, html.hc h3 { color: #ffff00; }
+html.hc a:link { color: #66ccff; }
+html.hc a:visited { color: #ffffff; }
+html.hc a:hover, html.hc a:focus { background: #ffff00; color: #000000; }
+html.hc .site-header, html.hc .nav, html.hc .site-footer { background: #000000; color: #ffffff; border-color: #ffffff; }
+html.hc .logo:link, html.hc .logo:visited { color: #ffff00; }
+html.hc .nav a[aria-current="page"], html.hc .nav a[aria-current="page"]:visited { background: #ffff00; color: #000000; }
+html.hc .tools button, html.hc .filters button, html.hc .form-buttons button { background: #000000; color: #ffffff; border-color: #ffffff; }
+html.hc .tools button[aria-pressed="true"], html.hc .filters button[aria-pressed="true"] { background: #ffff00; color: #000000; }
+html.hc .hero-box { background: #000000; border: 2px solid #ffff00; }
+html.hc aside, html.hc form, html.hc fieldset { background: #000000; border-color: #ffffff; }
+html.hc th { background: #333333; color: #ffffff; }
+html.hc th, html.hc td { border-color: #ffffff; }
+html.hc tbody tr:nth-child(even) { background: #1a1a1a; }
+html.hc input[type="text"], html.hc textarea { background: #000000; color: #ffffff; border-color: #ffff00; }
+html.hc .gallery img { border-color: #ffffff; }
+html.hc .button:link, html.hc .button:visited { background: #000000; color: #ffff00; border-color: #ffff00; }

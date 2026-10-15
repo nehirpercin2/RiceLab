@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home – RiceLab: Linux desktop customization</title>
+  <meta name="description" content="RiceLab – a student website about customizing your Linux desktop.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contrast.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">RiceLab</a>
+    <div class="tools" role="group" aria-label="Accessibility settings">
+      <button type="button" id="font-down" aria-label="Decrease font size">A-</button>
+      <button type="button" id="font-up" aria-label="Increase font size">A+</button>
+      <button type="button" id="contrast-toggle" aria-pressed="false">High Contrast</button>
+    </div>
+  </div>
+</header>
+<nav class="nav" aria-label="Main navigation">
+  <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="distros.html">Distros &amp; Guide</a></li>
+      <li><a href="share.html">Share Your Setup</a></li>
+  </ul>
+</nav>
+<main id="main" class="page">
+  <p class="breadcrumb">You are here: RiceLab &rsaquo; Home</p>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-box">
+      <h1 id="hero-title">Make Linux Look Like Yours</h1>
+    </div>
+    <div class="hero-actions">
+      <a class="button primary" href="distros.html">Browse Distros</a>
+      <a class="button" href="share.html">Share Your Setup</a>
+    </div>
+  </section>
+  <div class="layout">
+    <div class="content">
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">What is ricing?</h2>
+        <p><strong>Ricing</strong> means customizing your Linux desktop so it looks and feels the way you want: <strong>themes, icons, fonts, wallpapers</strong> and a <strong>window manager</strong> that fits your workflow. The word comes from car culture, where people modified their cars to make them look faster, and today Linux users use it for desktop customization.</p>
+        <p>You do not need to be an expert to start:</p>
+        <ul>
+          <li>change the <strong>wallpaper</strong> and the <strong>colour theme</strong>,</li>
+          <li>try a different <strong>icon pack</strong> and a new <strong>font</strong>,</li>
+          <li>later switch to a <strong>tiling window manager</strong>.</li>
+        </ul>
+        <p>On this website you can compare popular distros, follow a short installation guide and share your own setup with others.</p>
+      </section>
+      <section aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Setup gallery</h2>
+        <div class="filters" role="group" aria-label="Filter setups by category">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="tiling" aria-pressed="false">Tiling WM</button>
+          <button type="button" data-filter="kde" aria-pressed="false">KDE</button>
+          <button type="button" data-filter="gnome" aria-pressed="false">GNOME</button>
+          <button type="button" data-filter="minimal" aria-pressed="false">Minimal</button>
+        </div>
+        <p id="filter-status" aria-live="polite">Showing 6 of 6 setups.</p>
+        <ul class="gallery">
+        <li class="card" data-category="tiling">
+          <article>
+            <h3>Setup 1 – Arch + awesome</h3>
+            <figure>
+              <a href="images/full/setup1-arch-awesome.jpg"><img src="images/thumbs/setup1-arch-awesome.jpg" width="800" height="500" alt="Desktop screenshot of Arch + awesome: Arch Linux with the awesome window manager and a dark blue theme."></a>
+              <figcaption>Arch Linux with the awesome window manager and a dark blue theme. Click the picture for the full-size screenshot.</figcaption>
+            </figure>
+          </article>
+        </li>
+        <li class="card" data-category="gnome">
+          <article>
+            <h3>Setup 2 – Fedora + GNOME</h3>
+            <figure>
+              <a href="images/full/setup2-fedora-gnome.jpg"><img src="images/thumbs/setup2-fedora-gnome.jpg" width="800" height="500" alt="Desktop screenshot of Fedora + GNOME: Fedora with GNOME extensions, rounded windows and a purple accent."></a>
+              <figcaption>Fedora with GNOME extensions, rounded windows and a purple accent. Click the picture for the full-size screenshot.</figcaption>
+            </figure>
+          </article>
+        </li>
+        <li class="card" data-category="minimal">
+          <article>
+            <h3>Setup 3 – Minimal nvim</h3>
+            <figure>
+              <a href="images/full/setup3-minimal-nvim.jpg"><img src="images/thumbs/setup3-minimal-nvim.jpg" width="800" height="500" alt="Desktop screenshot of Minimal nvim: One terminal with Neovim, no bar and no icons – only code."></a>
+              <figcaption>One terminal with Neovim, no bar and no icons – only code. Click the picture for the full-size screenshot.</figcaption>
+            </figure>
+          </article>
+        </li>
+        <li class="card" data-category="kde">
+          <article>
+            <h3>Setup 4 – KDE dark</h3>
+            <figure>
+              <a href="images/full/setup4-kde-dark.jpg"><img src="images/thumbs/setup4-kde-dark.jpg" width="800" height="500" alt="Desktop screenshot of KDE dark: KDE Plasma with a dark global theme and a custom icon pack."></a>
+              <figcaption>KDE Plasma with a dark global theme and a custom icon pack. Click the picture for the full-size screenshot.</figcaption>
+            </figure>
+          </article>
+        </li>
+        <li class="card" data-category="tiling">
+          <article>
+            <h3>Setup 5 – Tiling green</h3>
+            <figure>
+              <a href="images/full/setup5-tiling-green.jpg"><img src="images/thumbs/setup5-tiling-green.jpg" width="800" height="500" alt="Desktop screenshot of Tiling green: A tiling layout with gaps between windows and a green colour scheme."></a>
+              <figcaption>A tiling layout with gaps between windows and a green colour scheme. Click the picture for the full-size screenshot.</figcaption>
+            </figure>
+          </article>
+        </li>
+        <li class="card" data-category="minimal">
+          <article>
+            <h3>Setup 6 – Retro terminal</h3>
+            <figure>
+              <a href="images/full/setup6-retro-terminal.jpg"><img src="images/thumbs/setup6-retro-terminal.jpg" width="800" height="500" alt="Desktop screenshot of Retro terminal: An old-school look: amber text on black with a pixel font."></a>
+              <figcaption>An old-school look: amber text on black with a pixel font. Click the picture for the full-size screenshot.</figcaption>
+            </figure>
+          </article>
+        </li>
+        </ul>
+      </section>
+    </div>
+    <aside aria-labelledby="res-title">
+      <h2 id="res-title">Useful resources</h2>
+      <ul>
+        <li><a href="https://wiki.archlinux.org">Arch Wiki</a> &ndash; the best Linux documentation</li>
+        <li><a href="https://www.reddit.com/r/unixporn/">r/unixporn community</a> &ndash; thousands of desktop screenshots</li>
+        <li><a href="https://github.com/topics/dotfiles">Dotfiles on GitHub</a> &ndash; configs to copy and learn from</li>
+        <li><a href="https://www.nerdfonts.com">Nerd Fonts</a> &ndash; fonts and icon packs</li>
+        <li><a href="https://wallhaven.cc">Wallhaven</a> &ndash; wallpaper sources</li>
+      </ul>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; 2026 RiceLab &ndash; university student project, <span lang="hu">Eötvös Loránd Tudományegyetem</span></p>
+    <p class="footer-links"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>

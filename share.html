@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Share Your Setup – RiceLab</title>
+  <meta name="description" content="Send us a description of your Linux desktop setup.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contrast.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">RiceLab</a>
+    <div class="tools" role="group" aria-label="Accessibility settings">
+      <button type="button" id="font-down" aria-label="Decrease font size">A-</button>
+      <button type="button" id="font-up" aria-label="Increase font size">A+</button>
+      <button type="button" id="contrast-toggle" aria-pressed="false">High Contrast</button>
+    </div>
+  </div>
+</header>
+<nav class="nav" aria-label="Main navigation">
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="distros.html">Distros &amp; Guide</a></li>
+      <li><a href="share.html" aria-current="page">Share Your Setup</a></li>
+  </ul>
+</nav>
+<main id="main" class="page">
+  <p class="breadcrumb">You are here: <a href="index.html">RiceLab</a> &rsaquo; Share Your Setup</p>
+  <h1>Share Your Setup</h1>
+  <p>Tell us about your desktop! Fill in the form below and press <strong>Submit setup</strong>. If you allow it, your setup may appear in the <a href="index.html">setup gallery on the home page</a>.</p>
+  <div class="layout">
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Setup form</h2>
+      <form action="https://httpbin.org/post" method="post">
+        <div class="field">
+          <label for="name">Your name:</label>
+          <input type="text" id="name" name="name" size="30" maxlength="50" required autocomplete="name">
+        </div>
+        <fieldset>
+          <legend>Experience level:</legend>
+          <div class="choice"><input type="radio" id="lvl-beginner" name="level" value="beginner" required><label for="lvl-beginner">Beginner</label></div>
+          <div class="choice"><input type="radio" id="lvl-intermediate" name="level" value="intermediate"><label for="lvl-intermediate">Intermediate</label></div>
+          <div class="choice"><input type="radio" id="lvl-advanced" name="level" value="advanced"><label for="lvl-advanced">Advanced</label></div>
+        </fieldset>
+        <div class="field">
+          <label for="setup">Describe your setup:</label>
+          <textarea id="setup" name="setup" rows="8" cols="60" maxlength="4000" required></textarea>
+          <p class="counter"><span id="count">0</span>/4000 characters</p>
+        </div>
+        <div class="field choice">
+          <input type="checkbox" id="agree" name="agree" value="yes">
+          <label for="agree">I agree to show my setup publicly on the site</label>
+        </div>
+        <div class="form-buttons">
+          <button type="reset">Reset form</button>
+          <button type="submit">Submit setup</button>
+        </div>
+      </form>
+    </section>
+    <aside aria-labelledby="tips-title">
+      <h2 id="tips-title">Tips for a good submission</h2>
+      <ul>
+        <li>Write which <strong>distro</strong> and which <strong>desktop environment or window manager</strong> you use.</li>
+        <li>Mention the <strong>theme, icon pack and fonts</strong>, so others can copy your look.</li>
+        <li>Add a link to your <a href="https://github.com/topics/dotfiles">dotfiles on GitHub</a> if you have them.</li>
+      </ul>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; 2026 RiceLab &ndash; university student project, <span lang="hu">Eötvös Loránd Tudományegyetem</span></p>
+    <p class="footer-links"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>
