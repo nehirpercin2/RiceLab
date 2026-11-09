@@ -10,7 +10,7 @@ a:link { color: #0b4fa8; text-decoration: underline; }
 a:visited { color: #3b0764; text-decoration: underline; }
 a:hover, a:focus { background: #fff3b0; color: #000000; }
 img { max-width: 100%; height: auto; display: block; }
-.skip { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+.skip { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .site-header { background: #1f2933; color: #ffffff; }
 .bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 0.75rem 1rem; max-width: 72rem; margin: 0 auto; }
 .logo:link, .logo:visited { font-size: 2rem; font-weight: bold; color: #ffffff; text-decoration: none; }
