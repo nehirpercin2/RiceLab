@@ -5,10 +5,11 @@
   var size = 100;
   function save(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage not available */ } }
   function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-  function applySize() { root.style.fontSize = size + "%"; }
+  /* high contrast mode is also the large-font version: 125% of the chosen size */
+  function applySize() { root.style.fontSize = (root.classList.contains("hc") ? size * 1.25 : size) + "%"; }
+  if (load("ricelab-hc") === "1") { root.classList.add("hc"); }
   var storedSize = parseInt(load("ricelab-size"), 10);
   if (storedSize >= 80 && storedSize <= 160) { size = storedSize; applySize(); }
-  if (load("ricelab-hc") === "1") { root.classList.add("hc"); }
   var down = document.getElementById("font-down");
   var up = document.getElementById("font-up");
   var hc = document.getElementById("contrast-toggle");
@@ -19,6 +20,7 @@
     hc.addEventListener("click", function () {
       var on = root.classList.toggle("hc");
       hc.setAttribute("aria-pressed", on ? "true" : "false");
+      applySize();
       save("ricelab-hc", on ? "1" : "0");
     });
   }
