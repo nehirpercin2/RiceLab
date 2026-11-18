@@ -1,6 +1,6 @@
 /* RiceLab – print style sheet */
 body { font-family: Georgia, "Times New Roman", serif; font-size: 11pt; line-height: 1.35; color: #000000; background: #ffffff; }
-.skip, .site-header, .nav, .breadcrumb, .filters, .hero-actions, .footer-links, video, .form-buttons, .tools { display: none; }
+.skip, .site-header, .nav, .breadcrumb, .filters, .hero-actions, .site-footer, video, .form-buttons, .tools { display: none; }
 .hero { background: none; min-height: 0; padding: 0; }
 .hero-box { background: none; color: #000000; padding: 0; }
 .hero-box h1, h1, h2, h3 { color: #000000; }
@@ -14,4 +14,3 @@ a[href^="http"]:after { content: " (" attr(href) ")"; font-size: 9pt; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid #000000; padding: 0.15cm; }
 img { max-width: 6cm; }
-.site-footer { border-top: 1px solid #000000; background: none; }
